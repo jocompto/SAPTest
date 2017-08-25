@@ -1,0 +1,515 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>System Test</title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache" />
+<META HTTP-EQUIV="Pragma-directive" CONTENT="no-cache" />
+<META HTTP-EQUIV="Cache-Directive" CONTENT="no-cache" />
+<META HTTP-EQUIV="Expires" CONTENT="0" />
+	
+<link rel="stylesheet" type="text/css" media="all" href="all.css" />
+<script language="JavaScript" type="text/javascript" src="jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="jquery.cookies.2.1.0.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="flash_detect_min.js"></script>
+<script language="JavaScript" type="text/javascript" src="common.js"></script>
+
+</head>
+
+<body>
+
+<div class="header"><div class="container">System Test</div></div>
+
+<div class="title"></div>
+
+<div class="menu">
+	<div class="container">
+	<a href="#tys" id="tab1" class="tab"></a>
+	<a href="#faq" id="tab2" class="tab"></a>
+	
+	<div class="clear"></div>
+	</div>
+</div>
+
+<div class="body">
+
+<div id="div_tys">
+	<div class="content">
+	<h2 class="error">Warning</h2>
+	<h3 class="error">Your system is not configured as recommended to view this event.</h3>
+	
+	<table cellspacing="0" cellpadding="0" border="1" id="system_test">
+	<tr>
+		<th width="120">Component</th>
+		<th width="250">Minimum System Requirements</th>
+		<th width="130">Your Computer</th>
+		<th width="81">Test Status</th>
+		<th width="150">Help</th>
+	</tr>
+	<tr>
+		<td>Operating System / Browser</td>
+		<td>
+		<ul>
+		<li>Windows XP/Vista/7/8/10 with Chrome, IE 6+ or Firefox 3.x</li>
+		<li>Ubuntu Linux 8.x with Chrome or Firefox 3.x</li>  
+		<li>Mac OS 10.5.x with Chrome, Firefox 3.x or Safari 3.1.2</li>
+		</ul>
+		</td>
+		
+		<td></td>
+		<td align="center"><img src="images/icon_working_grey.png" id="check1" class="status" /></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Cookies</td>
+		<td>Must accept cookies</td>
+		<td></td>
+		<td align="center"><img src="images/icon_working_grey.png" id="check2" class="status" /></td>
+		<td></td>
+	</tr>
+	<tr class="warning">
+		<td>Javascript</td>
+		<td>Must have JavaScript enabled</td>
+		<td>Disabled</td>
+		<td align="center"><img src="images/icon_warning_orange.png" id="check3" class="status" /></td>
+		<td><a href="javascript:goTo(0,6);">How do I enable JavaScript?</a></td>
+	</tr>
+	<tr>
+		<td>Flash Player</td>
+		<td>Flash Player Version 9.0.115+</td>
+		<td></td>
+		<td align="center"><img src="images/icon_working_grey.png" id="check4" class="status" /></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Bandwidth</td>
+		<td>Audio Events: 56 Kbps or greater</td>
+		<td></td>
+		<td align="center"><img src="images/icon_working_grey.png" id="check5" class="status" /></td>
+		<td></td>
+	</tr>
+	</table>
+	
+	<p><a href="javascript:location.reload();"><img src="images/button-test_again.png" border="0" /></a></p>
+	
+	</div>
+</div>
+	
+<div id="div_faq" class="hidden">
+	<div class="content"><p><a href="javascript:expandAll();" class="expandAll" id="expandAll">Expand All Topics</a><a href="javascript:collapseAll();" class="expandAll hidden" id="collapseAll">Collapse All Topics</a></p></div>
+	
+	<div class="bar" id="system_requirements"><div>System Requirements</div></div>
+		<div class="hidden">
+		<div class="faq">My Operating System is not compatible.</div>
+			<div class="text hidden">
+			<p>In order to participate in the event, you will need to be working from a computer with one of the following configurations (operating system is in <strong>bold</strong>, followed by compatible browser options):</p>
+			<p><strong>Windows XP</strong> with IE 6+ or Firefox 3.x<br/>
+			<strong>Windows Vista</strong> with IE 6+ or Firefox 3.x<br/>
+			<strong>Ubuntu Linux 8.x</strong> with Firefox 3.x<span class="red">*</span><br/>
+			<strong>Mac OS 10.5.x</strong> with Firefox 3.x or Safari 3.1.2<span class="red">*</span></p>
+			<p>Contact your IT administrator to upgrade to a compatible OS, or locate a computer that is compatible.  In order to maximize success, be sure to retry the system test before proceeding to the event.</p>
+			<p><span class="red">*</span> Technical limitations on the Mac and Linux platforms prevent us from being able to support Live Demo Webcasts at this time.</p>
+			</div>
+	
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">My Bandwidth failed the speed test.</div>
+			<div class="text hidden">
+			<p>In order to participate in the event, you will need a minimum connection speed of 56Kbps for an Audio-only event, or 300Kbps for a Video event.</p>
+			<p>If you are participating in a Live Demo Webcast, you will need a minimum downstream speed of 300Kbps (plus audio and video requirements).</p>
+			<p>If your system test has failed, please locate a different computer that has a different connectivity method which meets this minimum requirement.  Be sure to retry the system test before proceeding to the event.</p>
+			</div>
+		
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">Internet Explorer - How do I upgrade my browser?</div>
+			<div class="text hidden">
+			<p>Click on the icon below and locate the relevant country and Operating System to download a compatible of Internet Explorer and follow Microsoft's installation instructions.</p>
+  
+  			<p><a href="http://www.microsoft.com/windows/internet-explorer/worldwide-sites.aspx" target="_blank"><img src="images/ie.jpg" border="0" /></a></p>
+			<p>Once installed, be sure to retry your system test before proceeding to the event.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">Firefox - How do I upgrade my browser?</div>
+			<div class="text hidden">
+			<p>Click on the icon below and locate the relevant country and Operating System to download a compatible version of Firefox. Then follow Mozilla's installation instructions.</p>
+  
+  			<p><a href="http://www.mozilla.com/en-US/firefox/all.html" target="_blank"><img src="images/ff.jpg" border="0" /></a></p>
+			<p>Once installed, be sure to retry your system test before proceeding to the event.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">Safari - How do I upgrade my browser?</div>
+			<div class="text hidden">
+			<p>Click on the icon below to download a compatible version of Safari. Then follow Apple's installation instructions.</p>
+  
+  			<p><a href="http://download.cnet.com/Apple-Safari/3000-2356_4-538999.html" target="_blank"><img src="images/safari.jpg" border="0" /></a></p>
+			<p>Once installed, be sure to retry your system test before proceeding to the event.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">How do I enable Cookies?</div>
+			<div class="text hidden">
+			<p>In order to access the event, your computer must have cookies and JavaScript enabled. If your operating system currently does not have cookies or JavaScript enabled, contact your network administrator or reference the help links located on the registration page.</p>
+			<p><strong>Complete the following steps to enable cookies support when using:</strong></p>
+			<p><strong>Windows (XP, Vista) and Internet Explorer 6+</strong></p>
+			<p>1. Open the browser<br/>
+			2. Click the "Tools" menu at the top<br/>
+			3. Click "Internet Options"<br/>
+			4. Click the "Privacy" tab<br/>
+			5. Click the "Advanced" button<br/>
+			6. Check "Override automatic cookie handling"<br/>
+			7. Check "Always allow session cookies"<br/>
+			8. Click "OK"</p>
+			<p><strong>Windows (XP, Vista) and Firefox 3.x</strong></p>
+			<p>1. Open the browser<br/>
+			2. Click the "Tools" menu at the top<br/>
+			3. Click "Options"<br/>
+			4. Click the "Privacy" tab<br/>
+			5. Check the "Accept cookies from sites" box<br/>
+			6. Click OK</p>
+			<p><strong>Ubuntu Linux 8.x and Firefox 3.x</strong></p>
+			<p>1. Open the browser<br/>
+			2. Click "Edit" menu<br/>
+			3. Click "Options"<br/>
+			4. Select the "Privacy" tab<br/>
+			5. Check the "Accept cookies from sites" box<br/>
+			6. Choose "Keep until they expire"<br/>
+			7. Click "OK"</p>
+			<p><strong>Mac OS 10.5.x with Firefox 3.x</strong></p>
+			<p>1. Open your browser<br/>
+			2. Click "Firefox" in your browser toolbar.<br/>
+			3. Select "Preferences."<br/>
+			4. Go to "Privacy."<br/>
+			5. Under "Cookies" select to "Accept cookies from sites."</p>
+			<p><strong>Mac OS 10.5.x with Safari 3.1.2</strong></p>
+			<p>1. Open your browser<br/>
+			2. Click "Safari" in your browser toolbar.<br/>
+			3. Select "Preferences..."<br/>
+			4. Go to "Security"<br/>
+			5. Click the "Always" radio button</p>
+			</div>
+		
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">How do I enable JavaScript?</div>
+			<div class="text hidden">
+			<p><strong>Complete the following steps to enable JavaScript support when using:</strong></p>
+			<p><strong>Windows (XP, Vista) and Internet Explorer 6+</strong></p>
+			<p>1. Select "Tools" from the top menu<br/>
+			2. Choose "Internet Options"<br/>
+			3. Click on the "Security" tab<br/>
+			4. Click on "Custom Level"<br/>
+			5. Scroll down until you see section labeled "Scripting"<br/>
+			6. Under "Active Scripting", select "Enable"<br/>
+			7. Click OK</p>
+			<p><strong>Windows (XP, Vista) and Mozilla Firefox 3.x</strong></p>
+			<p>1. Select the "Tools" menu<br/>
+			2. Select "Options..."<br/>
+			3. Select the "Content" tab<br/>
+			4. Click on "Enable JavaScript"<br/>
+			5. Click on "OK"</p>
+			<p><strong>Ubuntu Linux 8.x and Firefox 3.x</strong></p>
+			<p>1. Select the "Edit" menu<br/>
+			2. Select "Preferences..."<br/>
+			3. Select the "Content" tab<br/>
+			4. Click on "Enable JavaScript"<br/>
+			5. Click on "Close"</p>
+			<p><strong>Mac OS 10.5.x with Firefox 3.x</strong></p>
+			<p>1. Open the "Firefox" menu<br/>
+			2. Select "Tools�", to open the Options dialog box<br/>
+			3. In the row of colored icons at the top, click "Content"<br/>
+			4. Check the box for "Enable JavaScript"</p>
+			<p><strong>Mac OS 10.5.x and Safari 3.1.2</strong></p>
+			<p>1. Open your browser<br/>
+			2. Click "Safari" in your browser toolbar.<br/>
+			3. Select "Preferences..."<br/>
+			4. Go to "Security"<br/>
+			5. Click the "Enable JavaScript" checkbox</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">System Test was unable to determine my computer's compatibility.</div>
+			<div class="text hidden">
+			<p>The test may have been unsuccessful for any of the following reasons:</p>
+			<ul>
+			<li>You have a firewall or proxy setting that prevents the test from validating your system configuration</li>
+			<li>There was a network interruption that aborted the test cycle.</li>
+			</ul>
+			<p>Retry the System Tests.  If you get the same response, you may proceed to the event but we are unable to confirm your computer will work successfully.</p>
+			<p>If you are behind a firewall, you may want to contact your network administrator.</p>
+			</div>
+		
+		<div class="spacer"></div>
+		</div>
+		
+	<div class="bar" id="accessing_the_event"><div>Accessing the Event</div></div>
+		<div class="hidden">
+		<div class="faq">The Audience URL in the confirmation email doesn't work.</div>
+			<div class="text hidden">
+			<p>The URL to enter the webcast may have wrapped in your email program thus, truncating the URL into multiple fragments. Check to see that the URL has not been fragmented. You may need to cut and paste the full URL into the address field of your Web Browser.</p>
+			<p>Here is an example of a URL that has been fragmented.</p>
+			<p>http://event.on24.com/cli<br/>
+			ents/help</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">I am prompted to register again even if I already registered for the event.</div>
+			<div class="text hidden">
+			<p>If you have already registered for the event, you can enter your e-mail address in the registered users area of the registration page to access the event, if applicable.</p>
+			<p>Please note that you must have Cookies and JavaScript enabled on your computer. For additional help on these topics, please refer to FAQs <a href="javascript:goTo(0,5);">"How do I enable Cookies?"</a> and <a href="javascript:goTo(0,6);">"How do I enable JavaScript?"</a></p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">I keep receiving an error message stating that the form is missing information or I am entering an invalid e-mail address when I register.</div>
+			<div class="text hidden">
+			<p>When the registration page refreshes with an error message, check to see that all of the required registration fields have been filled out and resubmit the form.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">Can I access the event from a different computer than the one I registered from?</div>
+			<div class="text hidden">
+			<p>If you have already registered for the event, you can access the event regardless of the computer you initially registered from by entering your e-mail address in the returning registrant portion of the event registration page.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">I am asked for a password when I try to view the event.</div>
+			<div class="text hidden">
+			<p>If you are behind a firewall, your company may require a user ID and password in order to access the Internet or you may have to reconfigure your proxy settings to access this event, please check with your network administrator.</p>
+			<p>If you are behind a firewall and you are trying to view a event that is in HTTP format, you may have to reconfigure your protocol to stream this event. Please check with your network administrator.</p>
+			<p>Some events have restricted access and require a password, please contact the sponsoring company or customer support if you did not receive a password after you initially registered for the event or the password was not included in your invitation to access the event.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">I can't get back to the registration page!</div>
+			<div class="text hidden">
+			<p>After you register, a cookie is placed on your computer which lets us know you've already registered. When you return to the site, you will automatically bypass the registration page. If you need to re-register, or register a different person for an event, please delete cookies from your machine, and click on the link again.</p>
+			<p>To delete the cookies, complete the following steps:</p>
+			<p>1. Run Internet Explorer<br/>
+			2. Click on "Tools" on the menu at the top<br/>
+			3. Click on "Internet Options"<br/>
+			4. Click on "Delete"<br/>
+			5. Click on "Delete Cookies"<br/>
+			6. Click on "Close"<br/>
+			7. Click on "OK"</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">Pressing the "Launch Presentation" button doesn't do anything</div>
+			<div class="text hidden">
+			<p>If you have a pop-up blocking software installed and it is active, it may be blocking the presentation console from opening. You many need to temporarily disable the pop-up blocking software in order to participate in the event.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">I received a message that the event is not currently available.</div>
+			<div class="text hidden">
+			<p>This message may appear for any of the following reasons:</p>
+			<ul>
+			<li>The event you are trying to access has not yet been broadcasted. Verify the time and date of the live event to ensure the start time of the event. </li>
+			<li>The event may have only been available for live access. </li>
+			<li>The event you are trying to access has concluded but the on-demand version is not yet available. Please check back 24 hours after the conclusion of the original event to access the on-demand version. </li>
+			<li>The event may no longer be available.</li>
+			</ul>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">How do I clear my Browser Cache?</div>
+			<div class="text hidden">
+			<p><strong>Complete the following steps to clear your browser's cache when using:</strong></p>
+			<p><strong>Windows (XP, Vista) and Internet Explorer 6.x</strong></p>
+			<p>1. From the browser Tools menu, click Internet Options.<br/>
+			2. On the General tab, in the Temporary Internet files<br/>
+			3. section, click Delete Files.<br/>
+			4. Select Delete all offline content, and click OK.</p>
+			<p><strong>Windows (XP, Vista) and Internet Explorer 7.x and 8.x</strong></p>
+			<p>1. From the browser Tools menu, click Internet Options.<br/>
+			2. On the General tab, in the Browsing history section,<br/>
+			3. Click Delete.<br/>
+			4. In the Temporary Internet Files section, click Delete files.<br/>
+			5. To confirm the deletion, click Yes.</p>
+			<p><strong>Windows (XP, Vista) and Firefox 3.x</strong></p>
+			<p>1. From the browser Tools menu,<br/>
+			2. Select Clear Private Data<br/>
+			3. Check Cache<br/>
+			4. Click Clear Private Data Now.</p>
+			<p><strong>Ubuntu Linux 8.x and Firefox 3.x</strong></p>
+			<p>1. Tools -><br/>
+			2. Options...-><br/>
+			3. Advanced -><br/>
+			4. Network -><br/>
+			5. Offline Storage -><br/>
+			6. Clear Now</p>
+			<p><strong>Mac OS 10.5.x and Firefox 3.x</strong></p>
+			<p>1. Open your browser and in the Firefox menu<br/>
+			2. Select Clear Private Data.<br/>
+			3. Make sure Cache is checked<br/>
+			4. Click Clear Private Data Now.</p>
+			<p><strong>Mac OS 10.5.x and Safari 3.1.2</strong></p>
+			<p>1. Open your browser and click the "Safari" menu.<br/>
+			2. Click "Empty Cache"<br/>
+			3. Click "Empty" to confirm delete command.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">My screen freezes when I try to access the event</div>
+			<div class="text hidden">
+			<p>If your system test was successful, try clearing your browser's cache and restarting the event.</p>
+			<p>For more information refer to FAQ <a href="javascript:goTo(1,16);">"How do I clear my browser cache?"</a></p>
+			</div>
+		
+		<div class="spacer"></div>
+		</div>
+	
+	<div class="bar" id="media_player"><div>Media Player</div></div>
+		<div class="hidden">
+		
+		<div class="faq">Flash Player - How do I get a compatible version?</div>
+			<div class="text hidden">
+			<p>Click on the icon below and select your supported operating system to download a compatible version of Flash player and follow Adobe's installation instructions.</p>
+			<p><a href="http://get.adobe.com/flashplayer/otherversions/" target="_blank"><img src="images/flash.jpg" border="0" /></a></p>
+			<p>Once installed, be sure to retry your system test before proceeding to the event.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">The sound works continuously, but the video freezes.</div>
+			<div class="text hidden">
+			<p>This is usually because of network congestion. Network congestion manifests itself in different ways:</p>
+			<ul>
+			<li>The sound works continuously, but the video freezes. </li>
+			<li>The program continually stops and rebuffers. </li>
+			<li>The player automatically stops, requiring you to click play again to resume.</li>
+			</ul> 
+			<p>Please refer to FAQ <a href="javascript:goTo(2,20);">"The media player automatically stops or it continually stops and rebuffers"</a> for reference on network congestion.</p>
+
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">The media player automatically stops or it continually stops and rebuffers</div>
+			<div class="text hidden">
+			<p>Network congestion can occur at any time due to the following problems:</p>
+			<ul>
+			<li>If you are connecting to the Internet through a modem.</li>
+			<li>You are trying to access an event during peak Internet traffic hours.</li>
+			<li>If you are connecting to the Internet from outside Northern America.</li>
+			<li>There is heavy traffic on your company network.</li>
+			</ul>
+			<p>To alleviate network congestion, you may want to consider the following:</p>
+			<ul>
+			<li>Upgrading to a faster connection</li>
+			<li>Minimize the amount of applications you are running while accessing the event</li>
+			<li>Try accessing the event during an off-peak Internet traffic period.</li>
+			</ul>
+			<p>To alleviate these problems, consider reducing the amount of applications you have running. If you are accessing an on-demand event, try accessing the presentation at a later time when network congestion may have lessened.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">I can't hear anything (or the sound is very faint)</div>
+			<div class="text hidden">
+			<p>Verify that your speakers are plugged into the power outlet, turned on and up, and connected to the audio port of the computer. Your speakers or headphones must be plugged into the sound card not into the sound out jack of the CD-ROM drive. If you still cannot hear any audio, check your system volume settings and the volume on the media player. If your system is properly set-up, then try adjusting the system volume settings:</p>
+			<ol>
+			<li>Click Start, Settings, and then Control Panel.</li>
+			<li>Double-click on the Multimedia Icon.</li>
+			<li>On the audio tab, turn up the volume.</li>
+			</ol>
+			<p>If it is grayed out, this is indication that the system is not configured for sound. If you have turned up the volume on both your speakers and system, then try turning up the volume on the Windows Media Player.</p>
+			<ol>
+			<li>Open the Windows Media Player and look for the speaker icon.<br/>Next to the speaker icon is a slide bar for volume control.</li>
+			<li>Or right click anywhere on the Windows Media Player and look for volume in the list.<br/>If you are viewing a 'video' event, right click on the video and you will get the tool bar for volume.</li>
+			</ol>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">I can see the video but I can't hear anything (or the sound is very faint or choppy)</div>
+			<div class="text hidden">
+			<p>Please see FAQ <a href="javascript:goTo(2,21);">"I can't hear anything"</a>.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">The video is choppy</div>
+			<div class="text hidden">
+			<p>Video may be received in a choppy format due to network congestion. Please refer to FAQ <a href="javascript:goTo(2,20);">"The media player automatically stops or it continually stops and rebuffers"</a> for reference on network congestion.</p>
+			</div>
+		
+		<div class="spacer"></div>
+		</div>
+	
+	<div class="bar" id="event_console"><div>Event Console</div></div>
+		<div class="hidden">
+		
+		<div class="faq">The bottom of the console screen gets cut off. How can I fix?</div>
+			<div class="text hidden">
+			<p><strong>Tips to increase the size of the view window in Internet Explorer:</strong></p>
+			<p><strong>Hide your task bar:</strong></p>
+			<ul>
+			<li>Right click on your taskbar </li>
+			<li>Select Properties </li>
+			<li>Check the box for "Auto-hide the taskbar </li>
+			<li>Click OK </li>
+			</ul>
+			<p><strong>Remove menu bar, links, and status bar:</strong></p>
+			<p>For each one you must perform this process separately</p>
+			<ul>
+			<li>Right click on your menu bar area</li>
+			<li>Uncheck each checked item</li>
+			</ul>
+			<p><strong>Open windows without address bar:</strong></p>
+			<ul>
+			<li>Open Internet Explorer </li>
+			<li>Click the tools menu </li>
+			<li>Select Internet Options </li>
+			<li>Click the Security Tab </li>
+			<li>Click Custom </li>
+			<li>Scroll down about half way to the "Miscellaneous" section and enable "Allow websites to open windows without address or status bar </li>
+			<li>Click OK to close the windows. </li>
+			</ul>
+			<p>See also FAQ <a href="javascript:goTo(3,25);">"How do I change my screen resolution?"</a> in the System Requirements section.</p>
+
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">How do I change my screen resolution?</div>
+			<div class="text hidden">
+			<p><strong>Complete the following steps to increase your resolution when using</strong></p>
+			<p><strong>Windows (XP or Vista)</strong></p>
+			<ul>
+			<li>Right click on your desktop (not on an icon) </li>
+			<li>Select Properties </li>
+			<li>Select the settings </li>
+			<li>Increase your screen resolution by sliding the bar to "more" </li>
+			<li>Click OK </li>
+			</ul>
+			<p><strong>Mac OS 10.5.x</strong></p>
+			<ul>
+			<li>Click the Apple button </li>
+			<li>select System Preferences� </li>
+			<li>Select the <strong>Displays</strong> icon</li>
+			<li>In the list of <strong>Resolutions</strong>: select <strong>1024 x 768</strong> (or higher)</li>
+			</ul>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">I cannot hear the audio in a Live Demo Webcast (that includes a Desktop Presentation)</div>
+			<div class="text hidden">
+			<p>Please make sure you have Flash Player 8 and above. The Audio portion for such events is made available using Flash technology.  Please refer to FAQ <a href="javascript:goTo(2,18);">"Flash Player - How do I get a compatible version?"</a> for additional information.</p>
+			</div>
+			
+		<hr size="1" color="#c9cfd1" shade="noshade" />
+		<div class="faq">I can access the event, but I cannot view the slides or the slides are not flipping.</div>
+			<div class="text hidden">
+			<p>If you have joined a event, which has already started, please wait a few moments. The slides are either synchronized with the event and will flip with the next timed marker in the presentation or are user-controlled and can be flipped using controls located below the slides.</p>
+			<p>Try refreshing the presentation by either hitting F5 on your keyboard or closing out and relaunching the event.</p>
+			</div>
+		
+		<div class="spacer"></div>
+		</div>
+	
+</div>
+	
+
+
+
+</div>
+
+</body>
+</html>
